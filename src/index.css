@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.guest-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.guest-list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+  width: 50%;
+  border: 3px solid black;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.guest-details-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  width: 50%;
+  border: 3px solid black;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.guest-list li {
+  padding: 0.5rem;
+  list-style: none;
+}
+
+.guest-list thead tr {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.guest-list tbody tr td {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0.5rem;
+}
+
+.guest-list tbody {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.guest-list tbody tr:nth-child(odd) {
+  background-color: rgb(233, 232, 232);
+}
+
+.guest-list tbody tr :hover {
+  background-color: yellow;
+  cursor: pointer;
+}
+
+.guest {
+  padding: 0.3rem;
+}
+
+.guest-list-container > p {
+  border-top: 1px solid #d5d4d4;
+  width: 100%;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.backBtn {
+  padding: 0.5em;
+  border: 1px solid #d5d4d4;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  width: 100%;
+  font-size: 1.2rem;
+}
+
+.backBtn:hover {
+  background-color: #d5d4d4;
+}
